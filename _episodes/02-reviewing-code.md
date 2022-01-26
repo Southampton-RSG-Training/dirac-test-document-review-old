@@ -1,6 +1,5 @@
 ---
-title: "Introduction"
-slug: "lesson-introduction"
+title: "Reviewing Code"
 teaching: 0
 exercises: 0
 questions:
