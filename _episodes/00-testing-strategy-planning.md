@@ -1,5 +1,6 @@
 ---
 title: "Test Strategy and Planning"
+slug: dirac-test-document-review-test-strategy-planning
 teaching: 0
 exercises: 0
 questions:
