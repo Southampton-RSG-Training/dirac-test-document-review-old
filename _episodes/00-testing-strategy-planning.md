@@ -9,7 +9,8 @@ questions:
 - "To what extent are we confident of the accuracy of results that appear in publications?"
 objectives:
 - "Explain the reasons why testing is important"
-- "List what is included within a test plan"
+- "Explain the differences between a test plan and a test strategy"
+- "List what's typically included within a test case"
 - "Describe the benefits and drawbacks of manual and automated testing"
 - "Describe how unit tests can verify the correct behaviour of a program's functions"
 keypoints:
@@ -37,8 +38,8 @@ If we are unable to demonstrate that our software fulfills these criteria, why w
 
 There are two key aspects to consider before we start thinking about actual tests:
 
-- A **test strategy** is a set of guiding principles for testing, that covers the testing process e.g. how testing will be done, which formats to be used for defining test cases and recording results, and how tests will be reported. This may apply to many software projects.
 - A **test plan** defines the scope of what exactly is to be tested for a given piece of software, the objectives for testing, which tools or techniques will be used, how the software will be checked, and who will be involved. A test plan applies to a specific piece of software.
+- A **test strategy** contains guiding principles for testing, that covers the testing process e.g. how testing will be done, which formats to be used for defining test cases and recording results, and how tests will be reported. This may apply to many software projects, although in smaller groups and projects the test strategy may be defined within the test plan itself.
 
 ### The Test Case
 
