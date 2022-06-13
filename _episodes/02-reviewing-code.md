@@ -59,11 +59,5 @@ Here are some things to consider to get the most out of a code review (see blogs
 > Take a look at the GitHub code repository at <https://github.com/softwaresaved/rf4>. Examine the contents of the repository (code, documentation, other assets) and consider what you think needs to be improved in order for you to use it successfully. What would make it difficult to install and use? What would be the top two things you would address first and why?
 {: .challenge}
 
-## Acceptance Testing
-
-Another aspect we've already mentioned is that we should assume that others - including a future version of yourself - will **run** (essentially, use) our code.
-
-FIXME: add content for acceptance testing
-
 
 {% include links.md %}
