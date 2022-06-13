@@ -65,7 +65,40 @@ When followed, testing enables those within any software development effort to v
 
 > ## Design Tests for a New Feature
 > 
-> Look back at the Solution Requirements (SR1 or SR2) covered in the [Principles of Software Engineering Lesson](https://southampton-rsg-training.github.io/dirac-essentials-test/dirac-software-engineering-software-development-lifecycle#the-importance-of-getting-requirements-right). Write a couple of test cases that verify that the feature behaves as specified in the requirements.
+> Look back at the Solution Requirements (SR1 or SR2) covered in the [Principles of Software Engineering Lesson](https://dirac-hpc.github.io/HPC-Skills/dirac-software-engineering-software-development-lifecycle#the-importance-of-getting-requirements-right). Using the list of what tests cases should include above, write a couple of test cases that verify that the feature behaves as specified in the requirements. Feel free to make any assumptions you need to write the tests, but note them.
+> 
+> When considering test data, assume that the input data is a list of inflammation readings for each patient for each day of the trial, e.g. from a previous trial:
+> 
+> ```
+> Patient A: 0, 0, 0, 0, 1, 8, 10, 14, 20, 14, 16, 13, 12, 9, 6, 3, 0, 0, 0, 0
+> Patient B: 0, 0, 0, 1, 4, 7, 10, 13, 15, 17, 12, 6, 4, 2, 0, 0, 0, 0, 0, 0
+> ...
+> ```
+> {: .language-python}
+> 
+> It may seem strange that we're writing test cases for an implementation that doesn't yet exist! However, this can prove a useful practice, since writing a test case is also defining what constitutes correct behaviour. By defining exactly what the output of an implementation should be in relation to its input, this becomes a behavioural contract which can be used to guide and test the writing of the implementation. This is known as *test-driven development*.
+> 
+> > ## Solution
+> >
+> > Test case ID: #1
+> > Requirement: SR1
+> > Input data: 0, 0, 0, 0, 1, 8, 10, 14, 20, 14, 16, 13, 12, 9, 6, 3, 0, 0, 0, 0
+> > Prepare test: import mean_function from statistics_library
+> > Run test: mean_function(input_data)
+> > Expected result: 6.3
+> >
+> > Test case ID: #2
+> > Requirement: SR1
+> > Input data: 0, 0, 0, 0, 1, 8, 10, 14, 20, 14, 16, 13, 12, 9, 6, 3, 0, 0, 0, 0
+> > Prepare test: import stdev_function from statistics_library
+> > Run test: stdev_function(input_data)
+> > Expected result: 6.5505724940649275
+> >
+> > Assumptions
+> > - Statistical functions are as named and located in `statistics_library`.
+> 
+{: .solution}
+
 {: .challenge}
 
 
@@ -174,15 +207,10 @@ So what's happening here? When started without any arguments, pytest does a numb
 
 Notice the `...` after our test script:
 
-- If the function completes without an assertion being triggered, we count the test as a success (indicated as .).
+- If the function completes without an assertion being triggered, we count the test as a success (indicated as `.`).
 - If an assertion fails, or we encounter an error, we count the test as a failure (indicated as F). The error is included in the output so we can see what went wrong.
 
 If we have many tests, we essentially get a report indicating which tests succeeded or failed.
-
-> ## Why Should We Test Invalid Input Data?
->
-> Testing the behaviour of inputs, both valid and invalid, is a really good idea and is known as *data validation*. Even if you are developing command line software that cannot be exploited by malicious data entry, testing behaviour against invalid inputs prevents generation of erroneous results that could lead to serious misinterpretation (as well as saving time and compute cycles which may be expensive for longer-running applications). It's generally best not to assume your user's inputs will always be rational.
-{: .callout}
 
 
 {% include links.md %}

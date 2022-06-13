@@ -16,7 +16,7 @@ keypoints:
 - "A call stack is a chain of functions that have been executed prior to a certain point."
 ---
 
-As we have already seen, even a simple software project is typically split into smaller functional units and modules which are kept in separate files and subdirectories. As your code starts to grow and becomes more complex, it will involve many different coding-related files and external libraries. To help you manage this complexity, Integrated Development Environments (or IDEs) present helpful development tools and visualisation aids to help make writing code easier and more productive. We'll also take a closer look at debugging, a tool common to IDEs and very useful development technique for finding coding errors as programs are running.
+As we have already seen, even a simple software project is typically split into smaller functional units and modules which are kept in separate files and subdirectories. As your code starts to grow and becomes more complex, it will involve many different coding-related files and external libraries, and using otherwise useful editing tools like Nano may prove limited. To help you manage this complexity, Integrated Development Environments (or IDEs) present helpful development tools and visualisation aids to help make writing code easier and more productive. We'll also take a closer look at debugging, a tool common to IDEs and very useful development technique for finding coding errors as programs are running.
 
 
 ## Integrated Development Environments (IDEs)
@@ -80,5 +80,11 @@ Once we run the code within PyCharm's debugger, two sections appear that looks s
 - The `Variables` section on the right, which displays the local and global variables currently in memory which we can select to observe their current state.
 
 We can also continue execution of the program at this point, until another breakpoint is reached or the program ends, or even step through the code one statement at a time. This gives us very fine-grained control of our program, as we attempt to diagnose any problems, and is incredibly useful when we need to know precisely what is happening when faults appear.
+
+
+> ## Which One is for You?
+> 
+> Have a think about the different types of editors and IDEs we've discussed. Which one seems the right fit for you?
+{: .challenge}
 
 {% include links.md %}
