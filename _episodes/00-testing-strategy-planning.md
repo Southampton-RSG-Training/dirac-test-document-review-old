@@ -80,20 +80,23 @@ When followed, testing enables those within any software development effort to v
 > 
 > > ## Solution
 > >
+> > ```
 > > Test case ID: #1
 > > Requirement: SR1
 > > Input data: 0, 0, 0, 0, 1, 8, 10, 14, 20, 14, 16, 13, 12, 9, 6, 3, 0, 0, 0, 0
 > > Prepare test: import mean_function from statistics_library
 > > Run test: mean_function(input_data)
 > > Expected result: 6.3
-> >
+> > ```
+> > ```
 > > Test case ID: #2
 > > Requirement: SR1
 > > Input data: 0, 0, 0, 0, 1, 8, 10, 14, 20, 14, 16, 13, 12, 9, 6, 3, 0, 0, 0, 0
 > > Prepare test: import stdev_function from statistics_library
 > > Run test: stdev_function(input_data)
 > > Expected result: 6.5505724940649275
-> >
+> > ```
+> > 
 > > Assumptions
 > > - Statistical functions are as named and located in `statistics_library`.
 > {: .solution}
