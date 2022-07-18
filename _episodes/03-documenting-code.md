@@ -75,7 +75,7 @@ We should also add a short description.
 ~~~
 Inflam is a data management system written in Python that manages trial data used in clinical inflammation studies.
 ~~~
-{: .language-bash}
+{: .source}
 
 To give readers an idea of the software's capabilities, let's add some key features next:
 
@@ -89,7 +89,7 @@ Here are some key features of Inflam:
 - Generate plots of trial data
 - Analytical functions and views can be easily extended based on its Model-View-Controller architecture
 ~~~
-{: .language-bash}
+{: .source}
 
 As well as knowing what the software aims to do and its key features, it's very important to specify what other software and related dependencies are needed to use the software (typically called `dependencies` or `prerequisites`):
 
@@ -106,7 +106,7 @@ The following optional packages are required to run Inflam's unit tests:
 - [pytest](https://docs.pytest.org/en/stable/) - Inflam's unit tests are written using pytest
 - [pytest-cov](https://pypi.org/project/pytest-cov/) - Adds test coverage stats to unit testing
 ~~~
-{: .language-bash}
+{: .source}
 
 Here we're making use of markdown links, with some text describing the link within `[]` followed by the link itself within `()`.
 
@@ -180,7 +180,7 @@ Software version numbers are everywhere, and there are many different ways to do
 - MINOR version when you add functionality in a backwards compatible manner
 - PATCH version when you make backwards compatible bug fixes
 
-You can also add a hyphen followed by characters to denote a pre-release version, e.g. 1.0.0-alpha1 (first alpha release) or 1.2.3-beta4 (first beta release).
+You can also add a hyphen followed by characters to denote a pre-release version, e.g. 1.0.0-alpha1 (first alpha release) or 1.2.3-beta4 (fourth beta release).
 
 
 {% include links.md %}
