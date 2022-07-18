@@ -65,7 +65,7 @@ Here are some things to consider to get the most out of a code review (see blogs
 > > - The README.md mentions this code has been developed since 2010, but the commits indicate it's only just been committed to GitHub
 > > - LICENSE file is empty
 > > - Commits with cursory commit messages (e.g. 'Change', 'Not working')
-> > - Code is not in a working state on master branch - developing code should either be on a separate branch, or file releases made avai$
+> > - Code is not in a working state on master branch - developing code should either be on a separate branch, or file releases made available with versions
 > > - No tests
 > > - GitHub has highlighted potential security vulnerabilities with the repo's dependencies
 > >
@@ -98,6 +98,11 @@ Here are some things to consider to get the most out of a code review (see blogs
 {: .solution}
 
 {: .challenge}
+
+> ## What about a Good Example?
+>
+> If you'd like to take a look at a "good" GitHub Python repository which embodies the use of many best practices, take a look at the one for the heavily used [Python Requests library](https://github.com/psf/requests).
+{: .callout}
 
 
 {% include links.md %}
